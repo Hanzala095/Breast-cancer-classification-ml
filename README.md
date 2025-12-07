@@ -162,9 +162,3 @@ See `LICENSE` for details.
 
 **Muhammad Hanzala Khan**
 AI Student & Machine Learning Enthusiast
-
-
-```
-
-
-
