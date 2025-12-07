@@ -112,13 +112,13 @@ pip install -r requirements.txt
 
 ##  How to Run
 
-### ** Run via Jupyter Notebook**
+###  Run via Jupyter Notebook
 
 ```bash
 jupyter notebook Breast_Cancer_Project.ipynb
 ```
 
-### ** Run on Google Colab**
+###  Run on Google Colab
 
 Upload the `.ipynb` file and run all cells.
 
