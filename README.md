@@ -102,11 +102,11 @@ Breast-Cancer-Classification
 
 ##  Installation
 
-
+```bash
 git clone https://github.com/your-username/Breast-Cancer-Classification.git
 cd Breast-Cancer-Classification
 pip install -r requirements.txt
-
+```
 
 ---
 
@@ -114,9 +114,9 @@ pip install -r requirements.txt
 
 ### ** Run via Jupyter Notebook**
 
-
+```bash
 jupyter notebook Breast_Cancer_Project.ipynb
-
+```
 
 ### ** Run on Google Colab**
 
