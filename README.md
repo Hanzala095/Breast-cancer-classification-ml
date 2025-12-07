@@ -1,8 +1,8 @@
-```markdown
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-#  Breast Cancer Prediction Using Machine Learning  
-A complete end-to-end Machine Learning project for predicting whether a breast tumor is **benign** or **malignant**, using multiple ML models, preprocessing, EDA, evaluation metrics, hyperparameter tuning, and a final optimized SVM classifier.
+#  Breast Cancer Prediction Using Machine Learning
+
+A complete end-to-end Machine Learning project for predicting whether a breast tumor is **benign** or **malignant**, using EDA, preprocessing, ML models, evaluation metrics, hyperparameter tuning, and an optimized SVM classifier.
 
 ---
 
@@ -22,98 +22,105 @@ A complete end-to-end Machine Learning project for predicting whether a breast t
 ---
 
 ##  Overview
-This project implements a **complete ML workflow** for breast cancer classification:
+This project implements a **complete Machine Learning workflow** for breast cancer classification, including:
 
-- Data Loading & Cleaning  
+- Data loading & cleaning  
 - Exploratory Data Analysis (EDA)  
-- Train–Test Split  
-- Feature Scaling  
+- Train–test split  
+- Feature scaling  
 - Training **six ML models**  
-- Evaluation using Accuracy, Precision, Recall, F1-Score, ROC-AUC  
+- Evaluation using accuracy, precision, recall, F1-score, ROC-AUC  
 - Hyperparameter tuning using GridSearchCV  
-- Final optimized **Support Vector Machine (SVM)** model  
+- Final optimized **Support Vector Machine (SVM)** classifier  
 
 ---
 
 ##  Dataset
 **Breast Cancer Wisconsin Diagnostic Dataset**  
-Loaded directly through `sklearn.datasets.load_breast_cancer()`.
+Loaded directly with:
 
-- 569 samples  
-- 30 numerical features  
-- Binary target:  
-  - `0 = Malignant`  
-  - `1 = Benign`  
+```python
+from sklearn.datasets import load_breast_cancer
+````
 
- **No external download required.**
+* **569 samples**
+* **30 numerical features**
+* **Binary target:**
+
+  * `0 = Malignant`
+  * `1 = Benign`
+
+ No external download required.
 
 ---
 
 ##  Features Implemented
-- Full preprocessing pipeline  
-- Exploratory Data Analysis (EDA)  
-- Model training:
-  - Decision Tree  
-  - Random Forest  
-  - Support Vector Machine  
-  - KNN  
-  - Naive Bayes  
-  - Artificial Neural Network  
-- Model comparison table  
-- ROC-AUC analysis  
-- Hyperparameter tuning  
-- Final optimized SVM model  
+
+* Full preprocessing pipeline
+* Exploratory Data Analysis (EDA)
+* Machine Learning models:
+
+  * Decision Tree
+  * Random Forest
+  * Support Vector Machine (SVM)
+  * KNN
+  * Naive Bayes
+  * Artificial Neural Network (ANN)
+* Model comparison
+* Confusion matrices
+* ROC-AUC curves
+* Hyperparameter tuning
+* Final optimized SVM model
 
 ---
 
 ##  Technologies Used
-- Python  
-- Pandas  
-- NumPy  
-- Scikit-learn  
-- Matplotlib  
-- Seaborn  
-- Google Colab / Jupyter Notebook  
+
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* Matplotlib
+* Seaborn
+* Google Colab / Jupyter Notebook
 
 ---
 
 ##  Repository Structure
 
 ```
-
 Breast-Cancer-Classification
 │
-├── CCP_Report.pdf                # Full written report
-├── Breast_Cancer_Project.ipynb   # Complete code implementation
-├── README.md                     # Documentation
-├── LICENSE                       # MIT License
-└── requirements.txt              # Python dependencies
-
-````
+├── CCP_Report.pdf                 # Full written report
+├── Breast_Cancer_Project.ipynb    # Complete implementation code
+├── README.md                      # Documentation
+├── LICENSE                        # MIT License
+└── requirements.txt               # Python dependencies
+```
 
 ---
 
 ##  Installation
 
-```bash
+
 git clone https://github.com/your-username/Breast-Cancer-Classification.git
 cd Breast-Cancer-Classification
 pip install -r requirements.txt
-````
+
 
 ---
 
-##  How to Run the Project
+##  How to Run
 
 ### ** Run via Jupyter Notebook**
 
-```bash
+
 jupyter notebook Breast_Cancer_Project.ipynb
-```
+
 
 ### ** Run on Google Colab**
 
-Upload the `.ipynb` file directly and run all cells.
+Upload the `.ipynb` file and run all cells.
 
 ---
 
@@ -132,22 +139,22 @@ Upload the `.ipynb` file directly and run all cells.
 
 ##  Best Model — Optimized SVM
 
-**Hyperparameters selected using GridSearchCV:**
+###  Hyperparameters (via GridSearchCV)
 
 ```
-C = 0.1  
-kernel = 'linear'  
-gamma = 'scale'  
-degree = 2  
+C = 0.1
+kernel = "linear"
+gamma = "scale"
+degree = 2
 ```
 
-###  Final Performance:
+###  Final Performance
 
 * **98% Accuracy**
 * **98.6% Recall**
-* **Highest ROC-AUC (0.9937)**
+* **0.99 ROC-AUC (highest)**
 
- This makes the optimized SVM model highly reliable for medical diagnostic tasks where minimizing **false negatives** is critical.
+This makes the optimized SVM highly reliable for medical diagnostic tasks where **minimizing false negatives** is crucial.
 
 ---
 
@@ -162,7 +169,3 @@ See the `LICENSE` file for details.
 
 **Muhammad Hanzala Khan**
 AI Student & Machine Learning Enthusiast
-
-Feel free to connect with me on LinkedIn!
-
-```
